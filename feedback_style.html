@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full-Page Feedback Form</title>
+  <style>
+    /* Reset default browser margins and padding */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Full width and height */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Vertically center */
+      height: 10vh; /* Full viewport height */
+      width: 50vw;  /* Full viewport width */
+      background-color: #f5f5f5;
+    }
+
+    /* Full-width form */
+    .feedback-form {
+      background: #ffffff;
+      padding: 20px;
+      width: 100%; /* Stretch fully from left to right */
+      height: 100%; /* Make form take full height */
+      box-sizing: border-box;
+    }
+
+    .feedback-form h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .feedback-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .feedback-form input[type="text"],
+    .feedback-form input[type="email"],
+    .feedback-form select,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .feedback-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .feedback-form button {
+      cursor: pointer;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      width: 100%;
+    }
+
+    .feedback-form button:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="feedback-form">
+      <h1>Feedback Form</h1>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+
+      <label for="rating">How would you rate our website?</label>
+      <select id="rating" name="rating">
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+
+      <label>Which services did you use?</label>
+      <div>
+        <input type="checkbox" id="cleaning" name="service" value="cleaning">
+        <label for="cleaning" style="display:inline;">Cleaning</label>
+      </div>
+      <div>
+        <input type="checkbox" id="repair" name="service" value="repair">
+        <label for="repair" style="display:inline;">Repair</label>
+      </div>
+      <div>
+        <input type="checkbox" id="plumbing" name="service" value="plumbing">
+        <label for="plumbing" style="display:inline;">Plumbing</label>
+      </div>
+
+      <label for="suggestions">Any suggestions?</label>
+      <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+
+      <label for="contact">Would you like us to contact you?</label>
+      <select id="contact" name="contact">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
