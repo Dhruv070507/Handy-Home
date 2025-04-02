@@ -12,18 +12,18 @@
     float: right;
     width: 250px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 8px;
     margin-right: 50px;
 }
 .search-bar{
     text-align: left;
     font-size: 20px;
-    color: #343131;
+    color: #7e7979;
     float: right;
     width: 250px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 8px;
     margin-right: 50px;
 }
@@ -74,9 +74,6 @@
     border-radius: 5px;
 }
   
-body{
-    background: linear-gradient(to bottom right, #d3d3d3, #a9a9a9);
-}
 .content-container {
     display: flex;
     align-items: center;
@@ -113,60 +110,6 @@ h1{
     margin-right: 20px;
 }
 
-.gallery .images1{
-    display: flex;
-    justify-content: center;
+.images{
     gap: 50px;
-    margin-bottom: 100px;
-}
-
-.gallery img{
-    width: 250px;
-    height: 200px;
-    border-radius: 10px;
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-
-.gallery img:hover{
-    opacity: 1;
-    transform: scale(1.02);
-}
-
-.gallery{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    margin-left: 60px;
-    background: rgba(255, 255, 255, 0.5);
-    display: inline-block;
-    padding-bottom: 20px;
-    border-radius: 5px;
-}
-    
-.gallery .images2{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 100px;
-}
-
-.gallery .images3{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 100px;
-}
-
-.gallery .images4{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 100px;
-}
-
-.gallery .images5{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 100px;
 }
